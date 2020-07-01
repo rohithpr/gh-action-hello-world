@@ -10,3 +10,4 @@ jobs:
               uses: rohithpr/gh-action-hello-world@branch-actions
               env:
                 event_name: ${{github.event_name}}
+                ref: ${{github.ref}}
