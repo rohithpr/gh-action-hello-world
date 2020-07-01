@@ -1,4 +1,4 @@
-on: [push]
+on: [pull_request]
 
 jobs:
     hello_world_job:
@@ -7,6 +7,4 @@ jobs:
         steps:
             - name: First step
               id: first_step
-              uses: rohithpr/gh-action-hello-world@0.0.4
-            - name: Second step
-              run: echo "The time was ${{ steps.first_step.outputs.time }}"
+              uses: rohithpr/gh-action-hello-world@master
