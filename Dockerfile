@@ -4,4 +4,4 @@ WORKDIR /gh-action
 
 COPY entrypoint.sh .
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
