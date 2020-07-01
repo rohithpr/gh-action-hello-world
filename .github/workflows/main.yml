@@ -7,4 +7,7 @@ jobs:
         steps:
             - name: First step
               id: first_step
-              uses: rohithpr/gh-action-hello-world@master
+              uses: rohithpr/gh-action-hello-world@branch-actions
+              env:
+                event_name: ${{github.event_name}}
+                ref: ${{github.ref}}
