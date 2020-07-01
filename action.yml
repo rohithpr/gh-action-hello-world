@@ -1,0 +1,11 @@
+name: "Hello World"
+
+description: "Say a greeting"
+
+outputs:
+    time:
+        description: "The time we greeted you"
+
+runs:
+    using: "docker"
+    image: "Dockerfile"
